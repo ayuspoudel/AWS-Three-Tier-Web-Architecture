@@ -15,7 +15,7 @@ This guide is for individuals in technical roles who have foundational knowledge
 
 ## Architecture Summary
 
-![Architecture Diagram](/demos/3TierArch.png)
+![Architecture Diagram](/demos/3TierArch1.png)
 
 In this architecture, an Application Load Balancer forwards client requests to EC2 instances in the web tier. These instances, running Nginx, serve a React.js website and route API requests to the application tier's internal load balancer. The internal load balancer forwards these requests to Node.js application servers that interact with a multi-AZ Aurora MySQL database. Each tier is configured with load balancing, health checks, and auto-scaling to ensure availability.
 
